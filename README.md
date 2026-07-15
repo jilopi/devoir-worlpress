@@ -22,10 +22,13 @@ Site vitrine e-commerce réalisé avec WordPress.
 
 ## Importation dans Local
 
-1. Compresser le contenu du dossier `site` au format ZIP.
-2. Ouvrir Local.
-3. Choisir l’option d’importation d’un site.
-4. Sélectionner le fichier ZIP créé.
+1. Télécharger le dépôt GitHub avec **Code → Download ZIP**, puis extraire l’archive.
+2. Ouvrir le dossier `site`.
+3. Sélectionner les dossiers `app`, `conf` ainsi que le fichier `local-site.json`.
+4. Compresser ces trois éléments dans une nouvelle archive ZIP.
+5. Ouvrir Local.
+6. Glisser-déposer l’archive ZIP dans la fenêtre de Local, ou choisir **Import site**.
+7. Suivre les étapes proposées par Local pour terminer l’importation.
 
 ## Identifiants WordPress
 
