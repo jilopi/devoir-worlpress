@@ -1,0 +1,33 @@
+[06-Jul-2026 01:00:28 UTC] WordPress database error Table 'local.wp_woocommerce_attribute_taxonomies' doesn't exist for query SELECT * FROM wp_woocommerce_attribute_taxonomies WHERE attribute_name != '' ORDER BY attribute_name ASC; made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/woocommerce/woocommerce.php'), WC, WooCommerce::instance, WooCommerce->__construct, WooCommerce->init_hooks, Automattic\WooCommerce\Internal\ProductAttributes\VisualAttributeTermAdmin->register, wc_get_attribute_taxonomies
+[06-Jul-2026 01:05:16 UTC] WordPress database error Table 'wp_e_events' already exists for query CREATE TABLE `wp_e_events` (
+			id bigint(20) unsigned auto_increment primary key,
+			event_data text null,
+			created_at datetime not null
+		) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci; made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, Elementor\Plugin->init, Elementor\Plugin->init_components, Elementor\Core\Admin\Admin->__construct, Elementor\Plugin->init_common, Elementor\Core\Common\App->init_components, Elementor\Core\Common\Modules\EventTracker\Module->__construct, Elementor\Core\Common\Modules\EventTracker\DB->__construct, Elementor\Core\Common\Modules\EventTracker\DB->create_table
+[06-Jul-2026 01:05:16 UTC] WordPress database error Duplicate key name 'created_at_index' for query ALTER TABLE wp_e_events
+    		ADD INDEX `created_at_index` (`created_at`)
+		 made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, Elementor\Plugin->init, Elementor\Plugin->init_components, Elementor\Core\Admin\Admin->__construct, Elementor\Plugin->init_common, Elementor\Core\Common\App->init_components, Elementor\Core\Common\Modules\EventTracker\Module->__construct, Elementor\Core\Common\Modules\EventTracker\DB->__construct, Elementor\Core\Common\Modules\EventTracker\DB->add_indexes
+[06-Jul-2026 01:18:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_gallery_image_ids() on bool in C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-content\plugins\elementor\modules\ai\module.php:351
+Stack trace:
+#0 C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-includes\class-wp-hook.php(341): Elementor\Modules\Ai\Module->get_product_images_ajax('')
+#1 C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#2 C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#3 C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-admin\admin-ajax.php(192): do_action('wp_ajax_element...')
+#4 {main}
+  thrown in C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-content\plugins\elementor\modules\ai\module.php on line 351
+[06-Jul-2026 01:34:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_gallery_image_ids() on bool in C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-content\plugins\elementor\modules\ai\module.php:351
+Stack trace:
+#0 C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-includes\class-wp-hook.php(341): Elementor\Modules\Ai\Module->get_product_images_ajax('')
+#1 C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#2 C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#3 C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-admin\admin-ajax.php(192): do_action('wp_ajax_element...')
+#4 {main}
+  thrown in C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-content\plugins\elementor\modules\ai\module.php on line 351
+[06-Jul-2026 01:35:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_gallery_image_ids() on bool in C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-content\plugins\elementor\modules\ai\module.php:351
+Stack trace:
+#0 C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-includes\class-wp-hook.php(341): Elementor\Modules\Ai\Module->get_product_images_ajax('')
+#1 C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#2 C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#3 C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-admin\admin-ajax.php(192): do_action('wp_ajax_element...')
+#4 {main}
+  thrown in C:\Users\jilop\Local Sites\la-vie-des-plantes\app\public\wp-content\plugins\elementor\modules\ai\module.php on line 351
